@@ -10,25 +10,6 @@
 <link rel="stylesheet" href="css/contact.css">
 <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
 <!--/CSS-->
-<script>
-$(function() {
-
-  // contact form animations
-  $('#contact').click(function() {
-    $('#contactForm').fadeToggle();
-  })
-  $(document).mouseup(function (e) {
-    var container = $("#contactForm");
-
-    if (!container.is(e.target) // if the target of the click isn't the container...
-        && container.has(e.target).length === 0) // ... nor a descendant of the container
-    {
-        container.fadeOut();
-    }
-  });
-
-});
-</script>
 </head>
 
 <body>
